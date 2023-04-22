@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Genetic algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Genetic algorithm</h1>
+        <label for="Mutation Rate">Mutation Rate</label>
+        <input type="number" step="any" id="mutationRate" value="0.2">
+        <label for="populationSize">Population Size</label>
+        <input type="number" id="populationSize" value="200">
+        <label for="maxGenerations">Max Generations</label>
+        <input type="number" id="maxGenerations" value="500">
+        <button onclick="startButton()">Start</button>
+        <button onclick="clearButton()">Clear</button>
+        <a href="../html.html" class="exit1">Назад</a>
+    </div>
+    <div>
+        <canvas id="myCanvas" width="500" height="385"></canvas>
+    </div>
+    <script src="tsp.js"></script>
+</body>
+
+</html>

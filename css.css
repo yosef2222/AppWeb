@@ -1,0 +1,89 @@
+
+/* * {
+
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  
+  }
+  
+  html {
+  
+    height:100%;
+    width:100%;
+  
+  }
+  
+  body {
+  
+    align-content:space-around;
+    background-color:#202830;
+    color:#ffffff;
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto auto;
+    justify-items:center;
+    min-height:100%;
+    width:100%;
+  
+  }
+  
+  /* canvas {
+  
+    background-color:#ffffff;
+  
+  }  */ */
+
+  body {
+  
+    align-content:space-around;
+    background-color:#202830;
+    color:#ffffff;
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto auto;
+    justify-items:center;
+    min-height:100%;
+    width:100%;
+  
+  }
+
+  canvas {
+    border: 5px solid red;
+    background-color:#ffffff;
+}
+
+.div1 {
+    margin: 20px;
+    padding: 10px 20px;
+    border: 5px solid grey;
+    min-height: 50px;
+}
+
+.btn {
+    height: 20px;
+    width: 200px;
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #484d52; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+   }
+
+   .exit {
+    position: absolute;
+    top: 35px;
+    right: 45px;
+   }
+
+   .exit1 {
+    height: 15px;
+    width: 40px;
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #484d52; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+   }
