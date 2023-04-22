@@ -24,11 +24,11 @@ function kMeans(data, k) {
         centroids.push(data[Math.floor(Math.random() * data.length)]);
 
     }
-    // Repeat until convergence
     let clusters = [];
     for (let i = 0; i < k; i++) {
         clusters.push([]);
     }
+    // Repeat until convergence
     let converged = false;
     while (!converged) {
         // Assign each data point to the closest centroid

@@ -14,7 +14,7 @@ let initialPheromone = 0.1;
 let distances;
 // initialize the pheromone matrix
 let pheromones;
-
+//get the input from the user
 let points = [];
 function handleMouseDown(event) {
     let x = event.clientX - canvas.offsetLeft;
@@ -59,7 +59,9 @@ function antColonyOptimizationTSP(distanceMatrix, numAnts, numIterations, evapor
     // Repeat for the specified number of iterations
     for (let iteration = 0; iteration < numIterations; iteration++) {
         const ants = [];
-        animate(pheromoneMatrix, distanceMatrix);
+        if (iteration % 5 === 0) {
+            animate(pheromoneMatrix, distanceMatrix);
+        }
         // Create ants and construct tours
         for (let antIndex = 0; antIndex < numAnts; antIndex++) {
             const ant = createAnt(distanceMatrix, pheromoneMatrix, alpha, beta);
@@ -81,8 +83,9 @@ function antColonyOptimizationTSP(distanceMatrix, numAnts, numIterations, evapor
         for (let i = 0; i < bestTour.length; i++) {
             path.push(points[bestTour[i]]);
         }
-        animatepath(context, path);
-
+        if (iteration % 5 === 0) {
+            animatepath(context, path);
+        }
     }
 
     // Return the best tour found
@@ -228,7 +231,7 @@ function drawPheromoneTrails(pheromoneLevels, distanceMatrix) {
             const opacity = pheromoneLevel / maxPheromoneLevel;
             if (opacity > 0) { // Only draw if pheromone level is non-zero
                 context.strokeStyle = `rgba(0, 255, 0, ${opacity})`;
-                context.lineWidth = 5 + opacity * 4;
+                context.lineWidth = 10;
                 context.beginPath();
                 context.moveTo(points[i][0] - 8, points[i][1] - 8);
                 context.lineTo(points[j][0] - 8, points[j][1] - 8);
