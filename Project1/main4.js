@@ -1,7 +1,7 @@
 function buildMap(n) {
 
 
-var
+let
 canv = document.getElementById('canvas'),
 ctx = canv.getContext('2d');
 canv.width = 800;//window.innerWidth;//400;
@@ -54,12 +54,12 @@ function grid1(a){ // Рисование сетки
 
 grid();
 map.length = n;
-for(var i=0; i<n; i++){
+for(let i=0; i<n; i++){
     map[i] = new Array();
     map[i].length = n;
 }
-for (var i=0; i<map.length; i++){
-  for (var j=0; j<map[i].length; j++)
+for (let i=0; i<map.length; i++){
+  for (let j=0; j<map[i].length; j++)
     map[i][j] = 0;}
 
 
@@ -155,7 +155,7 @@ canv.addEventListener('mousemove',function(e) {//Если мышка двига�
      // }
      // console.log(1)
       for (let i = 1; i < A.length+1; i++) {
-            if (i != A.length) {
+            if (i!==A.length) {
                 xi = A[i][0];
                 yi = A[i][1];
             }
@@ -236,7 +236,7 @@ canv.addEventListener('mousedown',function(e) {//Если мышка не дви
 
     if((isMouseDown)&&(pointRoute)){
        for (let i = 1; i < A.length+1; i++) {
-             if (i != A.length) {
+             if (i!==A.length) {
                  xi = A[i][0];
                  yi = A[i][1];
              }
@@ -331,7 +331,7 @@ const bfs = function(map, fromRow, fromColumn, toRow, toColumn) {
             let arr = new Array();
             for (let i = 1; i < path.length-1; i++) {
                 setTimeout(function() {
-                    if (i != path.length) {
+                    if (i!==path.length) {
                         arr[i] = path[i].split(':', 2);
                         if(i+1!=path.length)
                         arr[i + 1] = path[i + 1].split(':', 2);

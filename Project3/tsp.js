@@ -61,7 +61,7 @@ function crossover(parentA, parentB) {
     let start = Math.floor(Math.random() * parentA.length);
     let end = Math.floor(Math.random() * parentA.length);
 
-    while (start == end) {
+    while (start===end) {
         start = Math.floor(Math.random() * parentA.length);
         end = Math.floor(Math.random() * parentA.length);
     }
@@ -183,15 +183,15 @@ function startButton() {
             for (let i = populationSize - 1; i > populationSize / 2; i--) {
                 parents.push(pop[i])
             }
-            if (populationSize - 1 - i == 0) {
+            if (populationSize - 1 - i===0) {
                 break;
             }
-            if (populationSize - 1 - j == 0) {
+            if (populationSize - 1 - j===0) {
                 i++;
                 j = i + 1;
             }
             let offspring = crossover(pop[populationSize - 1 - i], pop[populationSize - 1 - j]);
-            if (offspring.length == points.length) {
+            if (offspring.length===points.length) {
                 parents.push(offspring);
             }
             j++;
@@ -209,9 +209,8 @@ function startButton() {
         }
         convergance++;
         generationCount++;
-        if (generationCount % 100 == 0) {
+        if (generationCount % 100===0) {
             animatepath(context, bestPathever);
-            console.log(bestPathever);
             console.log(calcFitness(bestPathever));
         }
     }

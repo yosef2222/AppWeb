@@ -7,7 +7,6 @@ canvas.addEventListener("mousedown", function(event) {
   let x = event.pageX - canvas.offsetLeft;
   let y = event.pageY - canvas.offsetTop;
   drawPixel(x, y);
-  console.log(pixels);
 });
 
 function drawPixel(x, y) {
