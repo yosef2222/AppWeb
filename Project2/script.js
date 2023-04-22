@@ -11,7 +11,7 @@ function handleMouseDown(event) {
     context.beginPath();
     context.arc(x - 8, y - 8, 5, 0, Math.PI * 2);
     context.fill();
-    points.push({x, y});
+    points.push({ x, y });
 }
 
 
@@ -22,7 +22,7 @@ function kMeans(data, k) {
     let centroids = [];
     for (let i = 0; i < k; i++) {
         centroids.push(data[Math.floor(Math.random() * data.length)]);
-        
+
     }
     // Repeat until convergence
     let clusters = [];
