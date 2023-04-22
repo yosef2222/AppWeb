@@ -1,9 +1,56 @@
 canvas {
     border: 5px solid red;
 }
-
+/*
 div {
     margin: 20px;
     padding: 10px 20px;
     border: 5px solid grey;
+}*/
+
+.div1 {
+    margin: 20px;
+    padding: 10px 20px;
+    border: 5px solid grey;
+    min-height: 50px;
+}
+
+.btn {
+    height: 20px;
+    width: 200px;
+    display: inline-block;
+    /* Строчно-блочный элемент */
+    background: #484d52;
+    /* Серый цвет фона */
+    color: #fff;
+    /* Белый цвет текста */
+    padding: 1rem 1.5rem;
+    /* Поля вокруг текста */
+    text-decoration: none;
+    /* Убираем подчёркивание */
+    border-radius: 3px;
+    /* Скругляем уголки */
+}
+
+.exit {
+    position: absolute;
+    top: 35px;
+    right: 45px;
+}
+
+.exit1 {
+    height: 15px;
+    width: 40px;
+    display: inline-block;
+    /* Строчно-блочный элемент */
+    background: #484d52;
+    /* Серый цвет фона */
+    color: #fff;
+    /* Белый цвет текста */
+    padding: 1rem 1.5rem;
+    /* Поля вокруг текста */
+    text-decoration: none;
+    /* Убираем подчёркивание */
+    border-radius: 3px;
+    /* Скругляем уголки */
 }

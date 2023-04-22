@@ -2,20 +2,22 @@
 
 <head>
     <title>K-Means</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css.css">
 </head>
 
 <body>
 
-    <div class="block">
+    <div class="div1">
         <h1>K-means clustring algorithm.</h1>
         <label for="clusterNum">Number of clusters</label>
         <input type="number" id="clusterNum" value="2">
         <button onclick="startButton()">Start</button>
         <button onclick="clearButton()">Clear</button>
-        <a href="../html.html" class="exit1">Назад</a>
+        <div class="exit">
+            <a href="../html.html" class="exit1">Назад</a>
+        </div>
     </div>
-    <div>
+    <div class="div1">
         <canvas id="myCanvas" width="500" height="385"></canvas>
     </div>
     <script src="script.js"></script>

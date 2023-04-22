@@ -3,11 +3,11 @@
 
 <head>
     <title>Genetic algorithm</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css.css">
 </head>
 
 <body>
-    <div>
+    <div class="div1">
         <h1>Genetic algorithm</h1>
         <label for="Mutation Rate">Mutation Rate</label>
         <input type="number" step="any" id="mutationRate" value="0.2">
@@ -17,9 +17,11 @@
         <input type="number" id="maxGenerations" value="500">
         <button onclick="startButton()">Start</button>
         <button onclick="clearButton()">Clear</button>
-        <a href="../html.html" class="exit1">Назад</a>
+        <div class="exit">
+            <a href="../html.html" class="exit1">Назад</a>
+        </div>
     </div>
-    <div>
+    <div class="div1">
         <canvas id="myCanvas" width="500" height="385"></canvas>
     </div>
     <script src="tsp.js"></script>
